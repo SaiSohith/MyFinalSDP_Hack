@@ -1,0 +1,46 @@
+<app-header></app-header>
+<div class="back">
+  <div class="topsearch">
+    <input mat-Input class="searchinput"  type="text" [(ngModel)]="data">
+    <button mat-button class="searchbutton" (click)="Search()">Search</button>
+    <button mat-button class="searchbutton" (click)="GetAll()">Getall</button>
+  </div>
+  <div *ngIf="!err">
+    <!-- <mat-grid-list cols= 4 #grid rowHeight="480px" gutterSize="20px">
+      <mat-grid-tile *ngFor="let product of contracts"> -->
+    <div class="alignment">
+      <div class="top" *ngFor="let product of contracts">
+        <div style="border:100vh;">
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>{{product.name}}</mat-card-title>
+            </mat-card-header>
+            <div style="margin: 5vh;">
+              <img mat-card-image style="width: 95%; height: 40vh; ;" src={{product.position}} alt="Photo of ">
+            </div>
+            <mat-card-content>
+              price : &#8377; {{product.price}}
+            </mat-card-content>
+            <mat-card-actions>
+              <div class="example-button-row">
+                <button mat-button color="primary" style="margin-bottom: 10px;"
+                  (click)="Details(product._id)">View Details</button>
+                <button mat-button color="primary" style="margin-bottom: 10px;margin-left: 10px;"
+                  (click)="Order(product)">BUY</button>
+                <button mat-button color="primary" style=" margin-left: 10px; margin-bottom: 10px;"
+                  (click)="addToCart(product)">ADD TO CART</button>
+              </div>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+    <!-- </mat-grid-tile>
+    </mat-grid-list> -->
+  </div>
+  <div *ngIf="err">
+    <h1 style="margin-top: 20px; text-align: center;">List was Empty</h1>
+  </div>
+</div>
+
+<app-footer></app-footer>

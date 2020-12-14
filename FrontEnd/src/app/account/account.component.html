@@ -1,0 +1,53 @@
+<app-header></app-header>
+<div class="hero-imag">
+<div class="profileview">
+    <div class="viewbox">
+        <div>
+            <div class="singleview">
+                <label>Username : </label>
+               
+                <input class="inputview" type="text" [(ngModel)]="username" [disabled]="true">
+            </div>
+            <div class="singleview">
+                <label>Email : </label>
+                
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="email" [disabled]="disableemail">
+                    <button mat-button style="color:seashell;" (click)="editemail()">edit</button>
+                </div>
+            </div>
+            <div class="singleview">
+                <label>Mobile number : </label>
+                
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="mobile" [disabled]="disablemobile">
+                    <button mat-button style="color:seashell;" (click)="editmobile()">edit</button>
+                </div>
+            </div>
+            <div class="singleview">
+                <label>Address : </label>
+                
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="address">
+                </div>
+            </div>
+            <div class="singleview">
+                <label>Change password</label>
+                <br> <br>
+                <div class="special">
+                    <h3 style="float: left;">Enter Old Password : </h3>
+                    <input class="passinput" [(ngModel)]="newpass" type="password" (blur)="onBlurMethod()">
+                </div>
+                <br> 
+                <div class="special">
+                    <h3 style="float: left;">Enter New Password : </h3>
+                    <input class="passinput" type="password" [(ngModel)]="newpassword" [disabled]="disablepassword">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button mat-button class="submit" (click)="Submit()">Save</button>
+        </div>
+    </div>
+</div>
+</div>

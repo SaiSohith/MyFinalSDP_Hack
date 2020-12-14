@@ -1,0 +1,90 @@
+<app-header></app-header>
+<div class="back">
+   <!-- <div style="margin-top: 3vh;" >
+
+      <button style="float: right; margin-right: 10px; background-color: #000; color: white;" routerLink="/statistics" mat-button >View
+         Statistics</button>
+      <button style="float: right; margin-right: 10px;background-color: #000; color: white;" routerLink="/login" mat-button color="primary">LogOut</button>
+      <button style="float: right; margin-right: 10px;background-color: #000; color: white;" routerLink="/aboutus" mat-button color="primary">About
+         Us</button>
+      <button style="float: right;margin-right: 3vh;margin-top:-3px;background-color: #000; color: white;" routerLink="/home" mat-icon-button 
+         aria-label="Example icon button with a home icon">
+         <mat-icon>home</mat-icon>
+      </button>
+   </div> -->
+   <div style="font-size: x-large;margin-left: 5vh;color:white"><b>{{list.name}}</b></div>
+
+   <div style="display: flex;" >
+      <img style="margin-left: 5vh; width: 30%; height: 50vh; margin-top: 5vh; margin-bottom: 3vh;" src={{list.position}}>
+      <p style="margin-top: 5vh; margin-left: 10vh; margin-right: 60vh; font-size: larger;color:white ">Description of product:
+         {{list.info}}</p>
+      <div style="position: absolute; left: 40%;top:40% ;display: block;"> 
+         <button routerLink='/order' mat-button style="margin:20px; background-color: #000; color: #fff;" >BuyNow </button>
+      <button mat-button style="background-color: #000; color: #fff;">Add To Cart</button>
+   </div>
+
+   </div>
+
+   <div>
+      <div style="border-bottom: 1px  solid #000 ; margin:40px;"></div>
+      <h2>
+         
+         <!-- <p style="margin: 5vh; font-size:larger;"><b>Info:</b> {{list.Info}}</p> -->
+      </h2>
+      <!-- <div>
+         <b style="margin: 5vh;font-size: larger;">Timings:{{list.Timings}}</b><br>
+      </div> -->
+      <!-- <div>
+         <a style="margin: 5vh;font-size: larger; border-bottom:10px  #000;" href="{{list.officialurl}}"><b>Official
+               Site Here</b></a>
+      </div> -->
+      <div style="color: #fff; margin-top: -85px; margin-bottom: 50px; font-size: 25px; margin-left: 10vh;">
+          Price: {{list.price}}
+         <!-- <h1 style="margin: 2vh;font-size: larger; border-bottom: 2px  solid #000;"><b>Reviews:</b></h1>
+         <app-review class="bor" [List]="list"></app-review> -->
+      </div>
+      <!-- <div style="display: inline-flex;">
+         <div style="margin-left: 20px;">
+            <input style="width: 300%; height: 30px; " type="text" [(ngModel)]="data" placeholder="Review">
+        </div>
+        <div>
+            <button style="margin-left: 40vh;" mat-button (click)="Post()">Post</button>
+        </div>
+      </div> -->
+      <div>
+         <div>
+           <!-- <div  style="margin-left:30px;">
+              <form class="example-form">
+               <div style="display: flex;"> <mat-form-field  class="example-full-width" >
+                  <mat-label>Leave a comment</mat-label>
+                  <textarea #box  matInput ></textarea>
+                </mat-form-field>
+                <button mat-button color="primary"  (click)="Post()" >Post</button>
+              </div>
+            
+              </form>
+              <button mat-button color="primary"  (click) ="onPost(box.value)" >Post</button> 
+            </div> -->
+            <!-- <div >
+            <div *ngFor="let Lis of reviews">
+            <mat-card class="bor ">
+                <mat-card-header>
+                <div><mat-card-title  >{{Lis.Username}}</mat-card-title></div>
+                </mat-card-header>
+                <mat-card-content>
+                  <p style="margin-left:4vh;"> {{Lis.Review}}
+                  </p>
+                 
+                </mat-card-content>
+                <mat-card-actions>
+                  <button style="margin-left: 4vh;" mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+                    <mat-icon>favorite</mat-icon>
+                  </button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            </div>-->
+            </div>
+      </div> 
+      <app-reviews [List]="list"></app-reviews>
+   </div>

@@ -1,0 +1,45 @@
+<div class="hero-imag"></div>
+<div *ngIf = "err">
+    <mat-card class="example">
+     <mat-card-header>
+     <mat-card-title></mat-card-title>
+      <mat-card-subtitle></mat-card-subtitle>
+    </mat-card-header>
+<mat-card-content>
+Invalid Credentials      
+</mat-card-content>
+    <mat-card-actions>
+<button (click) = "ok()">ok</button> </mat-card-actions>
+</mat-card>
+</div>
+<div class="main">
+    <div class="matcard" style="background-color:white; padding-bottom: 0%;">
+        <div>
+            <form [formGroup]="Login" class="login" #loginform="ngForm">
+                <div class="userlogo">
+                    <i class="fa fa-user-circle" aria-hidden="true"></i>
+                </div>
+                <h1>Log in</h1>
+                <p>
+                    <mat-form-field class="textbox">
+                        <mat-label><i class="fa fa-user" aria-hidden="true"></i>Email</mat-label>
+                        <input matInput type="text" formControlName="user" required>
+                    </mat-form-field>
+                </p>
+                <p>
+                    <mat-form-field class="textbox">
+                        <mat-label><i class="fa fa-lock" aria-hidden="true"></i>Password</mat-label>
+                        <input matInput type="password" formControlName="password" required>
+                    </mat-form-field>
+                </p>
+                <div class="submit">
+                    <button mat-stroked-button [disabled]="Login.invalid" (click)="onSubmit()">Login</button>
+                </div>
+                <div class="already">
+                    <p>Create an account? </p>
+                    <button mat-button (click)="already()">Sign up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

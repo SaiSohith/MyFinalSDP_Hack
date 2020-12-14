@@ -1,0 +1,30 @@
+<div class="hero-imag"></div>
+<div>
+    <div class="matcard" style="background-color:white; padding-bottom: 0%;" align="center">
+        <form class="signin" [formGroup]="SigninForm">
+            <div class="userlogo">
+                <i class="fa fa-user-circle" aria-hidden="true"></i>
+            </div>
+            <h1>Sign in</h1>
+            <div class="viewbox">
+                <input matInput type="text" formControlName="name" placeholder="username" >
+            </div>
+            <div class="viewbox">
+                <input matInput type="email" formControlName="email" placeholder="email">
+            </div>
+            <div class="viewbox">
+                <input matInput type="tel" formControlName="mobile" placeholder="mobile number">
+            </div>
+            <div class="viewbox">
+                <input matInput type="password" formControlName="password" placeholder="password">
+            </div>
+            <div class="complete">
+                <button mat-button type="submit" [disabled]="SigninForm.invalid" (click)="createAccount()">Create account</button>
+            </div>
+            <div class="already">
+                <p>Already have an account?</p>
+                <button mat-button (click)="already()">Login</button>
+            </div>
+        </form>
+    </div>
+</div>

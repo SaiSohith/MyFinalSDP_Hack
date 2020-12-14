@@ -1,0 +1,41 @@
+<div style="display: inline-flex;">
+    <div style="margin-left: 20px;">
+       <input style="width: 300%; height: 30px; " type="text" [(ngModel)]="data" placeholder="Review">
+   </div>
+   <div>
+       <button style="margin-left: 40vh;" mat-button (click)="Post()">Post</button>
+   </div>
+ </div>
+ <div>
+    <div>
+      <!-- <div  style="margin-left:30px;">
+         <form class="example-form">
+          <div style="display: flex;"> <mat-form-field  class="example-full-width" >
+             <mat-label>Leave a comment</mat-label>
+             <textarea #box  matInput ></textarea>
+           </mat-form-field>
+           <button mat-button color="primary"  (click)="Post()" >Post</button>
+         </div>
+       
+         </form>
+         <button mat-button color="primary"  (click) ="onPost(box.value)" >Post</button> 
+       </div> -->
+       <div >
+       <div *ngFor="let Lis of views">
+       <mat-card class="bor ">
+           <mat-card-header>
+           <div><mat-card-title  >{{Lis.Username}}</mat-card-title></div>
+           </mat-card-header>
+           <mat-card-content>
+             <p style="margin-left:4vh;"> {{Lis.Review}}
+             </p>
+            
+           </mat-card-content>
+           <mat-card-actions>
+             <button style="margin-left: 4vh;" mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+               <mat-icon>favorite</mat-icon>
+             </button>
+           </mat-card-actions>
+         </mat-card>
+       </div>
+       </div>

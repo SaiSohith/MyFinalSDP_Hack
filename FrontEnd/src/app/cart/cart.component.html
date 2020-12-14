@@ -1,0 +1,59 @@
+<!-- <br>
+<br>
+<div class="hero-imag"></div> -->
+<div class="back">
+  <div>
+    <app-header></app-header>
+    <div>
+      <div style="font-size: large;">
+        <h2 style="margin-left: 101vh; color: white;">Cart</h2>
+      </div>
+      <div style="margin: 10px;">
+        <mat-grid-list cols=4 #grid rowHeight="480px" gutterSize="10px">
+          <mat-grid-tile *ngFor="let store of cart">
+
+            <mat-card class="example-card">
+              <mat-card-header>
+                <div></div>
+                <mat-card-title> {{store.name}}</mat-card-title>
+                <mat-card-subtitle>
+                </mat-card-subtitle>
+              </mat-card-header>
+              <img mat-card-image style="height: 8cm;" src="{{store.position}}" alt="Photo of ">
+              <mat-card-content>
+                price : &#8377; {{store.price}}
+              </mat-card-content>
+              <mat-card-actions>
+                <div class="example-button-row">
+                  <button mat-button color="primary" style=" margin-bottom: 10px;" (click)="Order(store)">BUY</button>
+                  <button mat-button color="primary" style=" margin-left: 10px; margin-bottom: 10px;"
+                    (click)="remove(store)">Remove</button>
+                </div>
+              </mat-card-actions>
+            </mat-card>
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="totalprice">
+    <div class="pricedisplay">
+      <h3 style="color: white;">Total Price is : {{totalprice}}</h3>
+    </div>
+  </div>
+  <div>
+    <button mat-button
+      style="height: 35px;width: 100px; margin-left: 1250px;margin-right: 20vh; margin-bottom: 3vh;color: white; border: 12vh; background-color: black;"
+      (click)="PlaceAll()">Check Out</button>
+    <!-- <button style="height: 35px;width: 100px; margin-left: 1250px;font-size: 20px; background-color:rgb(68, 0, 255)" (click)="PlaceAll()">Place All</button> -->
+  </div>
+  <div *ngIf="!totalprice">
+    <div class="movetop">
+      <h2> Your Cart is Empty</h2>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+<!-- {{sample.name}} -->
+<!--   <img src={{sample.position}} alt={{sample.name}}>  -->

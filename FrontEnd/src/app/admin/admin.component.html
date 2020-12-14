@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="back">
+<div>
+    <br>
+    <br>
+    <div class="viewcontent">
+        <div class="singleview">
+            <label class="labelview">Admin Name : </label><br><br>
+            <input type="text" [(ngModel)]="owner" [disabled]="true" required>
+        </div>
+        <div class="singleview">
+            <label class="labelview">Product Name: </label><br><br>
+            <input type="text" [(ngModel)]="productname" placeholder="Enter the Product name" required> 
+        </div>
+        <div class="singleview">
+            <label class="labelview">Info : </label><br><br>
+            <input type="text" [(ngModel)]="info" placeholder="Enter the Info of the Product" required>
+        </div>
+        <div class="singleview">
+            <label class="labelview">Price : </label><br><br>
+            <input type="number" [(ngModel)]="price" placeholder="Enter the Price to be sold" required>
+        </div>
+        <div class="singleview">
+            <label class="labelview">Image: </label><br><br>
+            <input type="text" [(ngModel)]="image" placeholder="Enter the image url" required>
+        </div>
+        <div>
+            <button mat-button (click)="submit()">Submit</button>
+        </div>
+    </div>
+</div>
+</div>

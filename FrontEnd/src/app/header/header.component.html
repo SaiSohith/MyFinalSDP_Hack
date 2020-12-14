@@ -1,0 +1,38 @@
+<div style="margin-right: -3vh;">
+  <mat-toolbar class="toolback">
+    <div *ngIf="abc">
+      <button mat-button><a routerLink="/" >Home</a></button>
+      <button mat-button><a routerLink="/cart" >Cart</a></button>
+      <button mat-button><a routerLink="/aboutus" >About Us</a></button>
+            <button *ngIf="admin" mat-button ><a routerLink="/admin">Admin</a></button>
+    </div>
+    <span class="example-spacer"></span>
+    <div>
+    <span style="color: white; font-size: larger; margin-left: -15vh;">Welcome to Zine-Online-Grocery Store</span></div>
+    <span class="example-spacer"></span>
+    <div *ngIf="!abc">
+      <button mat-button color="primary"><a routerLink="/login">Login</a></button>
+      <button mat-button><a routerLink="/signin">Signup</a></button>
+      
+    </div>
+    <div *ngIf="abc">
+      <!-- <a routerLink="">
+        <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+          <mat-icon>home</mat-icon>
+        </button>
+      </a>
+      <a routerLink="/cart">
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+          <mat-icon>shopping_cart</mat-icon>
+        </button>
+      </a> -->
+      <button mat-button><a routerLink="/account">Account</a></button>
+      <button mat-button><a routerLink="/confirm">Orders</a></button>
+      <button mat-button (click)="logout()"><a>Logout</a></button>
+    </div>
+  </mat-toolbar>
+</div>
+
+<p>
+
+</p>

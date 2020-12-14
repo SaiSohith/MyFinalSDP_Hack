@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="menu">
+    <div class="view">
+        <mat-card *ngFor="let product of productdata" class="card">
+            <div class="display">
+                <div style="text-align: center; font-size: 20px;">{{product.name}}</div>
+                <br>
+                <img src={{product.position}} alt={{product.name}}>
+                <br>
+                <h4>Price: <b>{{product.price}}</b></h4>
+                <br>
+                <br>
+            </div>
+        </mat-card>
+    </div>
+</div>
+<hr>
+<div >
+  
+        
+   
+   
+    <mat-card  class="ship" style="color: white;">
+        <h2>Your Order has been Successfully placed and the details have been sent to Your Mail</h2>
+        <h1 style=" font-size: 25px;" >Shipping Details :</h1><br>
+        <h3>Name: {{user.name}}</h3><br>
+        <h3>Mobile: {{user.mobile}}</h3><br>
+        <h3>Mail: {{user.email}}</h3><br>
+        <h3>Address: {{user.address}}</h3>
+    </mat-card>
+</div>

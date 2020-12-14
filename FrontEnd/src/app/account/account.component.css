@@ -1,0 +1,74 @@
+.profileview
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.viewbox
+{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.singleview
+{
+    margin-bottom: 30px;
+}
+
+.view
+{
+    display: inline-flex;
+}
+
+
+.inputview
+{
+    width: 500px;
+    height: 30px;
+    margin-right: 50px;
+}
+
+.submit
+{
+    margin-left: 200px;
+    background-color: rgb(9, 179, 23);
+    color: #fff;
+}
+
+input
+{
+    width: 150%;
+    height: 30px;
+}
+
+label
+{
+    font-size: 20px;
+}
+
+h3
+{
+    margin-top: 5px;
+}
+
+.special
+{
+    margin-left: 50px;
+}
+
+.passinput
+{
+    margin-left: 50px;
+    width: 250px;
+}
+.hero-imag {
+    background-color: #232533;
+    margin-bottom: -30vh;
+    height: 750px;
+    color: white;
+    margin-top: -2vh;
+    margin-left: -1vh;
+    margin-right: -2vh;
+}

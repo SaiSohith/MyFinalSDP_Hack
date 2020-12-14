@@ -1,0 +1,72 @@
+.main
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.footer
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.view
+{
+    background-color: rgb(221, 224, 221);
+    height: 270px;
+}
+
+.leftview
+{
+    position: absolute;
+    margin: 30px;
+}
+
+.displayleft
+{
+    display: inline-flex;
+}
+
+button
+{
+    display: block;
+    margin: 20px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.leftright
+{
+    position: absolute;
+    left: 125%;
+}
+
+.middleview
+{
+    position: absolute;
+    margin: 50px;
+    left: 35%;
+}
+
+
+.rightview
+{
+    position: absolute;
+    left: 70%;
+    margin: 30px;
+}
+
+i
+{
+    margin-right: 3px;
+}
+
+.inlinebut
+{
+    display: inline-flex;
+}

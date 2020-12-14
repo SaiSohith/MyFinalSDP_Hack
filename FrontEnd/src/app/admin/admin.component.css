@@ -1,0 +1,50 @@
+.viewcontent
+{
+    margin-top: 3%;
+    margin-left: 30%;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.singleview
+{
+    margin-bottom: 20px
+}
+
+.labelview
+{
+    width: 50px;
+    margin-bottom: 5px;
+}
+
+input
+{
+    width: 50%;
+    height: 30px;
+}
+
+button
+{
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    margin-left: 200px;
+}
+
+.back{
+    background-color: #232533;
+    margin-bottom: -30vh;
+    height: 750px;
+    color: white;
+    margin-top: -2vh;
+    margin-left: -1vh;
+    margin-right: -2vh;
+}
+/*.hero-imag {
+    background-image: url("https://wallpapercave.com/wp/wp2508376.jpg"); /* The image used */
+  /* Used if the image is unavailable */
+   /* height: 750px;  /* You must set a specified height */
+    /*background-position: center; /* Center the image */
+    /*background-repeat: no-repeat; /* Do not repeat the image */
+    /*background-size: cover; /* Resize the background image to cover the entire container */
+/*}*/

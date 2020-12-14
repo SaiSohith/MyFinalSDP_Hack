@@ -1,0 +1,33 @@
+/* .example-card {
+    max-width: 400px;
+  } */
+  
+  /* .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  } */
+
+  .view
+  {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .text
+  {
+    margin-top: 30px;
+  }
+
+  .align{    
+      margin-right: 70vh;
+      margin-left: 2vh;
+      border: 2px solid #000;
+  }
+  .back{
+      margin-top: -2.5vh;
+      margin-left: -1vh;
+      margin-right: -1vh;
+    background: #34e89e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }

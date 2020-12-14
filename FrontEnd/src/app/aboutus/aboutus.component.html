@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="back">
+    <div class="view">
+      <h1 style="font-size: 30px ; color: #ffffff;margin-left: 95vh;">About Us</h1>
+      <div *ngFor="let dev of devs" class="text">
+        <mat-card class="align">
+          <mat-card-title>{{dev.name}}</mat-card-title>
+          <mat-card-content>
+            <p>
+              {{dev.info}}
+            </p>
+            <p>{{dev.contact}}</p>
+  
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>

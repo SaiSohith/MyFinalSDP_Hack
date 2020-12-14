@@ -1,0 +1,100 @@
+.matcard
+{
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    width: 350px;
+    margin: auto;
+    transform: translate(-50% -50%);
+    border: 3px solid rgb(122, 125, 126);
+    border-radius: 15px;
+}
+
+.signin h1
+{
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+}
+
+.viewbox input
+{
+    overflow: hidden;
+    text-decoration: none;
+    width: 80%;
+    height: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    border: 1px solid #8f8f8f;
+}
+
+.complete
+{
+    text-align: center;
+}
+
+.complete button
+{
+    background-color: rgb(46, 218, 31);
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.userlogo
+{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fa-user-circle
+{
+    font-size: 60px;
+}
+
+.submit{
+    text-align: center;
+}
+
+.submit p a
+{
+    font-size: 12px;
+    text-decoration: none;
+    color: blue;
+}
+
+.submit button
+{
+    background-color: rgb(46, 218, 31);
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.already{
+    display: inline-flex;
+    margin-left: 10px;
+}
+.already button
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background: none;
+    outline: none;
+    border: none;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+}
+.hero-imag {
+    background-image: url("https://wallpaperaccess.com/full/2593068.jpg"); /* The image used */
+  /* Used if the image is unavailable */
+    height: 750px;  /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}

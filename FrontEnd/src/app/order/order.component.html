@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="profileview">
+    <div class="viewbox">
+        <div>
+            <div class="singleview">
+                <label>Name : </label>
+                <br>
+                <input class="inputview" type="text" [(ngModel)]="username" [disabled]="true">
+            </div>
+            <div class="singleview">
+                <label>Email : </label>
+                <br>
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="email" [disabled]="disableemail">
+                    <button mat-button color="primary" (click)="editemail()">edit</button>
+                </div>
+            </div>
+            <div class="singleview">
+                <label>Mobile number : </label>
+                <br>
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="mobile" [disabled]="disablemobile">
+                    <button mat-button color="primary" (click)="editmobile()">edit</button>
+                </div>
+            </div>
+            <div class="singleview">
+                <label>Address : </label>
+                <br>
+                <div class="view">
+                    <input class="inputview" type="text" [(ngModel)]="address">
+                </div>
+            </div>
+        </div>
+        <div>
+            <button mat-button class="submit" (click)="Submit()">Confirm</button>
+            <button mat-button class="submit" (click)="Cancel()">Cancel</button>
+        </div>
+    </div>
+</div>
